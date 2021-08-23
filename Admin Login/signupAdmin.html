@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Images/Logo.png" type="image/x-icon">
+    <title>Admin Singup</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">GO MEAL</a>
+          <a class="navbar-brand" href="../index.html">HOME</a>
+        </div>
+      </nav>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>
+                Sign Up to Application
+            </h1>
+
+            <form onsubmit="return false">
+                
+                <div class="form-group">
+                    <label for="username">Resturant Name</label>
+                        <input type="text" name="resturantname" id="resturantname" placeholder="GO MEAL">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                        <input type="text" name="Last Name" id="lastName" placeholder="CLARKE">
+                </div> -->
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" placeholder="abc@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                        <input type="number" name="Phone" id="phone" placeholder="03111111111">
+                </div> 
+                
+
+                 <div class="form-group">
+                    <label for="city">City</label>
+                        <input type="text" name="Address" id="city" placeholder="ISLAMABAD">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Use Strong Password">
+                </div>
+
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                        <input type="password" name="password2" id="password2" placeholder="Add same as above">
+                </div>
+                <button type="submit" onclick="registerAdmin() " class="btn">Sign Up</button>
+                <p class="bottom-text">
+                    By clicking the Sign Up button, you agree to our <a href="#">Terms & Conditions</a> and <a
+                        href="#">Privacy
+                        Policy</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <p>Already have an account?
+                <a href="loginAdmin.html">Login</a>
+            </p>
+        </footer>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCSZFrsxNTo1HJx0irp8XA-y7ee_JHvsYg",
+    authDomain: "dashboardapplication-cd167.firebaseapp.com",
+    databaseURL: "https://dashboardapplication-cd167-default-rtdb.firebaseio.com",
+    projectId: "dashboardapplication-cd167",
+    storageBucket: "dashboardapplication-cd167.appspot.com",
+    messagingSenderId: "611630716968",
+    appId: "1:611630716968:web:d8fcd18d5befd59e9ffd1d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <!-- <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script> -->
+    
+    <script src="../Assets/Js/app.js"></script>
+</body>
+
+</html>
